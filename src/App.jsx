@@ -232,11 +232,11 @@ export default function App() {
       </section>
 <section className="about-section">
   <div className="about-image">
-    <img src="/danielle-headshot.jpeg" alt="Danielle Dutro" />
+    <img src="/danielle-headshot.jpeg" alt="Danielle" />
   </div>
 
   <div className="about-copy">
-    <p className="eyebrow">About Danielle Dutro</p>
+    <p className="eyebrow">About Danielle</p>
 
     <h2>
       Food safety consulting grounded in real manufacturing operations.
