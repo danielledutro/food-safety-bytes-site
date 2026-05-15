@@ -53,18 +53,20 @@ const services = [
 ];
 
 const packages = [
-  {
-    title: "Allergen Control Readiness Review",
-    price: "Starting at $750",
-    description:
-      "A focused review of allergen storage, scheduling, changeover, utensils, rework, sanitation, and documentation controls.",
-    includes: [
-      "Remote document review",
-      "Allergen control gap summary",
-      "Risk-ranked corrective action list",
-      "Consulting call to walk through findings",
-    ],
-  },
+ {
+  title: "Audit Pre-Walk & Risk Review",
+  price: "Starting at $750 + travel",
+  description:
+    "An on-site facility walkthrough designed to identify likely food safety, GMP, allergen, sanitation, documentation, and operational risks before an audit, inspection, or customer visit.",
+  includes: [
+    "On-site facility walkthrough",
+    "GMP and operational observation review",
+    "Allergen and sanitation risk observations",
+    "Documentation and recordkeeping concerns",
+    "Written summary of key findings and recommendations",
+    "Follow-up consultation call",
+  ],
+},
   {
     title: "Chocolate Matrix / Enrober Validation Support",
     price: "Starting at $1,500",
@@ -228,7 +230,37 @@ export default function App() {
           ))}
         </div>
       </section>
+<section className="about-section">
+  <div className="about-image">
+    <img src="/danielle-headshot.jpg" alt="Danielle Dutro" />
+  </div>
 
+  <div className="about-copy">
+    <p className="eyebrow">About Danielle Dutro</p>
+
+    <h2>
+      Food safety consulting grounded in real manufacturing operations.
+    </h2>
+
+    <p>
+      I’m a food safety and quality professional with experience leading SQF,
+      HACCP, GMP, CAPA, environmental monitoring, allergen control, and audit
+      readiness programs within active food manufacturing environments.
+    </p>
+
+    <p>
+      My background includes confectionery, dairy, bakery, meat processing,
+      supplier compliance, sanitation oversight, food defense, and regulatory
+      readiness support across multiple manufacturing sectors.
+    </p>
+
+    <p>
+      I created Food Safety Bytes to help small manufacturers build practical,
+      sustainable food safety systems that work in real production environments
+      — not just on paper.
+    </p>
+  </div>
+</section>
       <section id="qualifications" className="section credentials-section">
         <div className="section-heading center">
           <h2>Certifications & Qualifications</h2>
