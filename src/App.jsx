@@ -232,7 +232,7 @@ export default function App() {
       </section>
 <section className="about-section">
   <div className="about-image">
-    <img src="/danielle-headshot.jpg" alt="Danielle Dutro" />
+    <img src="/danielle-headshot.jpeg" alt="Danielle Dutro" />
   </div>
 
   <div className="about-copy">
