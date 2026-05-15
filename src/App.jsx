@@ -230,37 +230,6 @@ export default function App() {
           ))}
         </div>
       </section>
-<section className="about-section">
-  <div className="about-image">
-    <img src="/danielle-headshot.jpeg" alt="Danielle" />
-  </div>
-
-  <div className="about-copy">
-    <p className="eyebrow">About Danielle</p>
-
-    <h2>
-      Food safety consulting grounded in real manufacturing operations.
-    </h2>
-
-    <p>
-      I’m a food safety and quality professional with experience leading SQF,
-      HACCP, GMP, CAPA, environmental monitoring, allergen control, and audit
-      readiness programs within active food manufacturing environments.
-    </p>
-
-    <p>
-      My background includes confectionery, dairy, bakery, meat processing,
-      supplier compliance, sanitation oversight, food defense, and regulatory
-      readiness support across multiple manufacturing sectors.
-    </p>
-
-    <p>
-      I created Food Safety Bytes to help small manufacturers build practical,
-      sustainable food safety systems that work in real production environments
-      — not just on paper.
-    </p>
-  </div>
-</section>
       <section id="qualifications" className="section credentials-section">
         <div className="section-heading center">
           <h2>Certifications & Qualifications</h2>
