@@ -9,37 +9,7 @@ const services = [
   { icon: Users, title: "Training & Team Development", description: "Practical, engaging training to build food safety knowledge and strengthen accountability." },
   { icon: FlaskConical, title: "Allergen & Enrober Validation Support", description: "Specialized support for allergen control and enrober line validation in confectionery operations." },
 ];
-<section class="product-feature" id="workbook">
-  <div class="product-card">
-    <p class="eyebrow">New Food Safety Bytes Workbook</p>
 
-    <h2>Residual Allergen Validation Workbook for Recirculating Chocolate Enrober Systems</h2>
-
-    <p class="product-price">$249</p>
-
-    <p>
-      A practical workbook-style guide for confectionery manufacturers using shared or legacy chocolate enrober systems.
-      Built around WHO reference dose methodology, this guide helps facilities document allergen carryover risk,
-      representative worst-case product selection, sampling strategy, threshold calculations, result interpretation,
-      and validation conclusions.
-    </p>
-
-    <ul class="product-bullets">
-      <li>Designed for chocolate enrobers and recirculating chocolate systems</li>
-      <li>Includes WHO-based threshold calculation guidance</li>
-      <li>Supports sampling plans, lab result review, and validation conclusions</li>
-      <li>Includes workbook tables, examples, and audit-ready documentation language</li>
-    </ul>
-
-    <p class="product-note">
-      Licensed for internal facility use only. This workbook does not replace regulatory, customer, sanitation, or labeling requirements.
-    </p>
-
-    <a class="product-button" href="PASTE-YOUR-CHECKOUT-LINK-HERE" target="_blank" rel="noopener">
-      Purchase Workbook
-    </a>
-  </div>
-</section>
 const packages = [
   { title: "Audit Pre-Walk & Risk Review", price: "Starting at $750 + travel", description: "An on-site facility walkthrough designed to identify likely food safety, GMP, allergen, sanitation, documentation, and operational risks before an audit, inspection, or customer visit.", includes: ["On-site facility walkthrough", "GMP and operational observation review", "Allergen and sanitation risk observations", "Documentation and recordkeeping concerns", "Written summary of key findings and recommendations", "Follow-up consultation call"] },
   { title: "Chocolate Matrix / Enrober Validation Support", price: "Starting at $1,500", description: "Support for small candy manufacturers needing to validate removal, flush, purge, or sanitation controls for recirculating chocolate systems.", includes: ["Process and allergen risk review", "Validation plan outline", "Sampling and documentation recommendations", "Audit-ready summary language"], featured: true },
@@ -58,12 +28,58 @@ const benefits = [
 function Header() {
   return <header className="site-header"><a className="logo-link" href="/" aria-label="Food Safety Bytes home"><img src="/food-safety-bytes-logo.png" alt="Food Safety Bytes logo" className="site-logo" /></a><nav className="nav"><a href="/">Home</a><a href="/about">About</a><a href="/#services">Services</a><a href="/#packages">Packages</a><a href="/#qualifications">Qualifications</a><a href="mailto:danielle@foodsafetybytes.com">Contact</a></nav></header>;
 }
+function WorkbookFeature() {
+  return (
+    <section className="product-feature" id="workbook">
+      <div className="product-card">
+        <p className="eyebrow">New Food Safety Bytes Workbook</p>
 
+        <h2>Residual Allergen Validation Workbook for Recirculating Chocolate Enrober Systems</h2>
+
+        <p className="product-price">$249</p>
+
+        <p>
+          A practical workbook-style guide for confectionery manufacturers using shared or legacy chocolate enrober systems.
+          Built around WHO reference dose methodology, this guide helps facilities document allergen carryover risk,
+          representative worst-case product selection, sampling strategy, threshold calculations, result interpretation,
+          and validation conclusions.
+        </p>
+
+        <ul className="product-bullets">
+          <li>Designed for chocolate enrobers and recirculating chocolate systems</li>
+          <li>Includes WHO-based threshold calculation guidance</li>
+          <li>Supports sampling plans, lab result review, and validation conclusions</li>
+          <li>Includes workbook tables, examples, and audit-ready documentation language</li>
+        </ul>
+
+        <p className="product-note">
+          Licensed for internal facility use only. This workbook does not replace regulatory, customer, sanitation, or labeling requirements.
+        </p>
+
+        <a
+          className="product-button"
+          href="mailto:danielle@foodsafetybytes.com?subject=Workbook%20Purchase%20Request%20-%20FSB-WB-001"
+        >
+          Purchase Workbook
+        </a>
+      </div>
+    </section>
+  );
+}
 function HomePage() {
   return <main><Header />
     <section id="home" className="hero"><div className="hero-copy"><motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55 }}><p className="eyebrow">Consulting. Training. Validation.</p><h1>Practical Food Safety.<span> Real Results.</span></h1><p className="hero-text">Helping food manufacturers build strong, compliant food safety systems that protect people, your brand, and your bottom line.</p><div className="proof-list"><div><ShieldCheck /> Expert Guidance</div><div><BadgeCheck /> Regulatory Compliance</div><div><TrendingUp /> Operational Excellence</div></div><a className="primary-button" href="mailto:danielle@foodsafetybytes.com">Let’s make food safety simple <ArrowRight /></a></motion.div></div><div className="hero-visual" aria-hidden="true"><div className="pixel-field">{Array.from({ length: 16 }).map((_, index) => <span key={index} />)}</div><div className="swoosh" /></div></section>
     <section className="about-preview"><div><p className="eyebrow">About Danielle</p><h2>Food safety consulting grounded in real manufacturing operations.</h2><p>Food Safety Bytes was created to help small manufacturers build practical, sustainable food safety systems that work in real production environments — not just on paper.</p><a href="/about" className="text-button">Read more about Danielle <ArrowRight /></a></div><img src="/danielle-headshot.jpeg" alt="Danielle" className="headshot-circle small" /></section>
     <section id="services" className="section services-section"><div className="section-heading center"><h2>How I Help</h2><p>Focused food safety support for small manufacturers that need clear, usable systems — not unnecessary complexity.</p></div><div className="service-grid">{services.map((service) => <article className="service-card" key={service.title}><service.icon /><h3>{service.title}</h3><p>{service.description}</p></article>)}</div></section>
+    <section id="services" className="section services-section">
+  ...
+</section>
+
+<WorkbookFeature />
+
+<section id="packages" className="section packages-section">
+  ...
+</section>
     <section id="packages" className="section packages-section"><div className="section-heading"><p className="eyebrow">Service Packages</p><h2>Fix the actual risk before it becomes a citation.</h2><p>Packages can be completed remotely or adapted for on-site support in Ohio and nearby regions.</p></div><div className="package-grid">{packages.map((pkg) => <article className={`package-card ${pkg.featured ? "featured" : ""}`} key={pkg.title}>{pkg.featured && <div className="featured-badge">Most Relevant</div>}<h3>{pkg.title}</h3><p className="price">{pkg.price}</p><p>{pkg.description}</p><ul>{pkg.includes.map((item) => <li key={item}><CheckCircle2 /> {item}</li>)}</ul></article>)}</div></section>
     <section id="qualifications" className="section credentials-section"><div className="section-heading center"><h2>Certifications & Qualifications</h2><p>Formal food safety training backed by real manufacturing floor experience in confectionery, SQF, allergen control, supplier compliance, CAPA, traceability, and audit readiness.</p></div><div className="credentials-layout"><div className="credential-list">{credentials.map((credential) => <div className="credential-item" key={credential}><CheckCircle2 /><span>{credential}</span></div>)}</div><aside className="credential-card"><img src="/food-safety-bytes-logo.png" alt="Food Safety Bytes logo" /><p>I bring real-world experience from the food manufacturing environment and a passion for helping companies develop food safety systems that are practical, sustainable, and effective.</p></aside></div></section>
     <ContactBand /><Benefits /><Footer /></main>;
