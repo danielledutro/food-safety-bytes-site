@@ -9,7 +9,37 @@ const services = [
   { icon: Users, title: "Training & Team Development", description: "Practical, engaging training to build food safety knowledge and strengthen accountability." },
   { icon: FlaskConical, title: "Allergen & Enrober Validation Support", description: "Specialized support for allergen control and enrober line validation in confectionery operations." },
 ];
+<section class="product-feature" id="workbook">
+  <div class="product-card">
+    <p class="eyebrow">New Food Safety Bytes Workbook</p>
 
+    <h2>Residual Allergen Validation Workbook for Recirculating Chocolate Enrober Systems</h2>
+
+    <p class="product-price">$249</p>
+
+    <p>
+      A practical workbook-style guide for confectionery manufacturers using shared or legacy chocolate enrober systems.
+      Built around WHO reference dose methodology, this guide helps facilities document allergen carryover risk,
+      representative worst-case product selection, sampling strategy, threshold calculations, result interpretation,
+      and validation conclusions.
+    </p>
+
+    <ul class="product-bullets">
+      <li>Designed for chocolate enrobers and recirculating chocolate systems</li>
+      <li>Includes WHO-based threshold calculation guidance</li>
+      <li>Supports sampling plans, lab result review, and validation conclusions</li>
+      <li>Includes workbook tables, examples, and audit-ready documentation language</li>
+    </ul>
+
+    <p class="product-note">
+      Licensed for internal facility use only. This workbook does not replace regulatory, customer, sanitation, or labeling requirements.
+    </p>
+
+    <a class="product-button" href="PASTE-YOUR-CHECKOUT-LINK-HERE" target="_blank" rel="noopener">
+      Purchase Workbook
+    </a>
+  </div>
+</section>
 const packages = [
   { title: "Audit Pre-Walk & Risk Review", price: "Starting at $750 + travel", description: "An on-site facility walkthrough designed to identify likely food safety, GMP, allergen, sanitation, documentation, and operational risks before an audit, inspection, or customer visit.", includes: ["On-site facility walkthrough", "GMP and operational observation review", "Allergen and sanitation risk observations", "Documentation and recordkeeping concerns", "Written summary of key findings and recommendations", "Follow-up consultation call"] },
   { title: "Chocolate Matrix / Enrober Validation Support", price: "Starting at $1,500", description: "Support for small candy manufacturers needing to validate removal, flush, purge, or sanitation controls for recirculating chocolate systems.", includes: ["Process and allergen risk review", "Validation plan outline", "Sampling and documentation recommendations", "Audit-ready summary language"], featured: true },
